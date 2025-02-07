@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1 Evaluation</title>
+    <link rel = "stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="logo-container">
+        <img src="company_logo.png" alt="Company Logo" class="company-logo">
+    </div>
+    <h2>Lesson 1 Evaluation</h2>
+    <h2>Instructor Name, Sign & SA#: <input type="text"></h2>
+    <div>
+    <h3>Date: <input type="date"></h3>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>Criteria</th>
+                <th>Score</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Punctuality</td>
+                <td class="dropdown-cell"></td>
+                <td>Arrives on-time for lesson deduct 5 points for being late</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Permit & Logbook</td>
+                <td class="dropdown-cell"></td>
+                <td>Driver’s Licence, learner’s permit & logbook status, legible,</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Inspection Exterior Interior</td>
+                <td class="dropdown-cell"></td>
+                <td>Follows logical sequence, inspects all systems/components, demonstrate, defect, describe correctly</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Inspection Interior</td>
+                <td class="dropdown-cell"></td>
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Timing Inspection</td>
+                <td class="dropdown-cell"></td>
+                <td>Less than 1.5 hour/Less than 1 Hour/Less than 45 Minutes</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Turns Approach</td>
+                <td class="dropdown-cell"></td>
+                <td>Observes traffic/Selects correct lane/signals/speed</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Intersections Stop</td>
+                <td class="dropdown-cell"></td>
+                <td>Smooth/Roll/Position/Gap/Observes Traffic</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Intersections Through</td>
+                <td class="dropdown-cell"></td>
+                <td>Traffic Check/ROW/Speed/Position/</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Turns Right</td>
+                <td class="dropdown-cell"></td>
+                <td>Traffic Check/ROW/Speed/Steering/Wide/Short/Correct Lane</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Turns Left</td>
+                <td class="dropdown-cell"></td>
+                <td>Traffic Check/ROW/Speed/Steering/Wide/Short/Correct Lane</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Mirror Adj.</td>
+                <td class="dropdown-cell"></td>
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Driving Along Yard</td>
+                <td class="dropdown-cell"></td>
+                <td>Hazards/Scanning/Mirrors 8 sec/Lane Position/Space/Shifting</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Air Brake Tests</td>
+                <td class="dropdown-cell"></td>
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Seat Belt Use</td>
+                <td class="dropdown-cell"></td>
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Push Pull Steering</td>
+                <td class="dropdown-cell"></td>
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Smoothness of Operation</td>
+                <td class="dropdown-cell"></td>
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td><input type="text"></td>
+                <td class="dropdown-cell"></td>
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td><input type="text"></td>
+                <td class="dropdown-cell"></td>
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Attitude</td>
+                <td class="dropdown-cell"></td>
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Defensive Driving</td>
+                <td class="dropdown-cell"></td> 
+                <td><input type="text" style="width: 450px;"></td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Total Score /100</td>
+                <td id="total-score">0</td>
+                <td>Participant Name: <input type="text" style="width: 350px;"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Comments:</h3>
+    <ul>
+        <li>0. unable to perform task.</li>
+        <li>1. understands concept, unable to perform task</li>
+        <li>2. in-consistently able to perform task.</li>
+        <li>3. able to perform task with guidance.</li>
+        <li>4. able to perform task with minimal guidance</li>
+        <li>5. able to perform task without guidance.</li>
+        <li>/  did not perform task.</li>
+    </ul>
+    <table  >
+        <thead>
+            <tr>
+                <th>Interior Items</th>
+                <th class="git" colspan="9">Group & Item Taught</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="git" colspan="2">1</th>
+                <th class="git" colspan="2">2</th>
+                <th class="git" colspan="2">3</th>
+                <th class="git" colspan="2">4</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Times</th>
+                <th>Start</th>
+                <th>Finish</th>
+                <th>Start</th>
+                <th>Finish</th>
+                <th>Start</th>
+                <th>Finish</th>
+                <th>Start</th>
+                <th>Finish</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Inspection</td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td class="total-duration">0:00</td>
+            </tr>
+            <tr>
+                <td>Driving</td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td class="total-duration">0:00</td>
+            </tr>
+            <tr>
+                <td>Backing</td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td class="total-duration">0:00</td>
+            </tr>
+            <tr>
+                <td>Observation</td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td><input type="time" class="start-time"></td>
+                <td><input type="time" class="finish-time"></td>
+                <td class="total-duration">0:00</td>
+            </tr>
+            <tr>
+                <th colspan="9">Grand Total</th>
+                <th id="grand-total">0:00</th>
+            </tr>
+        </tbody>
+    </table>
+    <br/>   
+    <div><button type="button" onclick="window.print()">Print this page</button>
+    <button type="button" onclick="window.location.reload()">Back to Home</button>
+    </div>
+    <!-- Email Input -->
+    <h5>Email: <input type="email" id="email" placeholder="Enter your email"></h5>
+        
+    <!-- Buttons -->
+    <button type="button" onclick="generateAndSendPDF()">Send as PDF</button>
+</div>
+</body>
+</html>

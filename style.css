@@ -1,0 +1,301 @@
+*{
+    margin: 10;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #fafafa; /* Light background */
+    padding: 15px;
+    color: #333; /* Dark text for contrast */
+}
+.container {
+    width: 95%;
+    /* max-width: 1200px;
+    min-height: 95vh; */
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Grid Layout for Lessons */
+  .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* Reduced gap for compact layout */
+  }
+  
+  /* Each Grid Item */
+  .grid-item {
+    background-color: #e9f0f7;   /* Light background for contrast */
+    border: 1px solid #ccddee;   /* Soft border */
+    border-radius: 8px;
+    padding: 15px;  /* Reduced padding for compactness */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Button/Link Styles */
+  .lesson-link,
+  .evaluation-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding for buttons */
+    margin: 8px 0;   /* Reduced margin between buttons */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.95rem; /* Slightly smaller font for compactness */
+    font-weight: 500;
+    transition: background 0.3s;
+    color: #fff;
+  }
+  
+  .lesson-link {
+    background-color: #007bff;
+  }
+  .lesson-link:hover {
+    background-color: #0056b3;
+  }
+  
+  .evaluation-link {
+    background-color: #28a745;
+  }
+  .evaluation-link:hover {
+    background-color: #218838;
+  }
+
+h2, h3, h4 {
+    color: #2c3e50; /* Slightly darker color for headings */
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+h2 {
+    text-align: left;
+    font-size: 22px;
+    color: #2980b9; /* Soft blue for heading */
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+    padding: 8px 10px;
+    text-align: left;
+    border: 1px solid #e1e1e1;
+    font-size: 14px; /* Reduced font size for a more compact table */
+}
+
+th {
+    background-color: #3498db; /* Blue header */
+    color: white;
+    font-size: 16px; /* Slightly larger font for headers */
+}
+
+td input[type="text"], td input[type="date"], td input[type="time"], td input[type="Signature"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9; /* Subtle background for inputs */
+    margin-top: 4px;
+}
+
+td input[type="text"]:focus, td input[type="date"]:focus, td input[type="time"]:focus {
+    outline: none;
+    border-color: #2980b9; /* Blue focus border */
+}
+
+.dropdown-cell {
+    text-align: center;
+}
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1f6692; /* Darker blue on hover */
+}
+
+.git {
+    text-align: center;
+}
+
+.total-duration, #total-score, #grand-total {
+    font-weight: bold;
+    text-align: center;
+}
+
+#grand-total {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* Style the logo container */
+.logo-container {
+    text-align: left;
+    margin-bottom: 20px; /* Optional: Adds space below the logo */
+}
+
+/* Style the logo itself */
+.company-logo {
+    max-width: 150px; /* Optional: Adjust the size of the logo */
+    height: auto;       
+}
+
+/* Default Styles (for large screens) */
+.container {
+    width: 95%;
+    max-width: 1400px; /* Ensures it doesn’t get too wide */
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+/* Default Styles (for large screens) */
+.container {
+    width: 95%;
+    max-width: 1400px; /* Ensures it doesn’t get too wide */
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+/* Default styles are for PC & Laptop (No media query needed) */
+
+/* Medium Screens - Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    th, td {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    td input[type="text"], td input[type="date"], td input[type="time"] {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 15px;
+    }
+
+    .company-logo {
+        max-width: 120px;
+    }
+}
+
+/* Small Screens - Mobile Devices (Below 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    td input[type="text"], td input[type="date"], td input[type="time"] {
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* Single column */
+        gap: 10px;
+    }
+
+    .grid-item {
+        padding: 10px;
+    }
+
+    .lesson-link,
+    .evaluation-link {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .company-logo {
+        max-width: 100px;
+        /* display: block; */
+        margin: 0 auto;
+    }
+
+    button {
+        /* width: 100%; */
+        font-size: 13px;
+        padding: 10px;
+    }
+}
