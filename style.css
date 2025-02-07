@@ -2,10 +2,10 @@
     margin: 10;
     padding: 20;
     box-sizing: border-box;
-}
-
-
-body {
+  }
+  
+  
+  body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,8 +15,8 @@ body {
     background-color: #fafafa; /* Light background */
     padding: 15px;
     color: #333; /* Dark text for contrast */
-}
-.container {
+  }
+  .container {
     width: 95%;
     /* max-width: 1200px;
     min-height: 95vh; */
@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-
+  
   /* Grid Layout for Lessons */
   .grid {
     flex: 1;
@@ -79,47 +79,47 @@ body {
   .evaluation-link:hover {
     background-color: #218838;
   }
-
-h2, h3, h4 {
+  
+  h2, h3, h4 {
     color: #2c3e50; /* Slightly darker color for headings */
     margin-bottom: 8px;
     font-weight: 600;
-}
-
-h2 {
+  }
+  
+  h2 {
     text-align: left;
     font-size: 22px;
     color: #2980b9; /* Soft blue for heading */
-}
-
-h3 {
+  }
+  
+  h3 {
     margin-top: 20px;
     font-size: 20px;
-}
-
-table {
+  }
+  
+  table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-td {
+  }
+  
+  
+  th, td {
     padding: 8px 10px;
     text-align: left;
     border: 1px solid #e1e1e1;
     font-size: 14px; /* Reduced font size for a more compact table */
-}
-
-th {
+  }
+  
+  th {
     background-color: #3498db; /* Blue header */
     color: white;
     font-size: 16px; /* Slightly larger font for headers */
-}
-
-td input[type="text"], td input[type="date"], td input[type="time"], td input[type="Text"] {
+  }
+  
+  td input[type="text"], td input[type="date"], td input[type="time"], td input[type="Text"] {
     width: 100%;
     padding: 6px;
     border: 1px solid #ccc;
@@ -127,17 +127,17 @@ td input[type="text"], td input[type="date"], td input[type="time"], td input[ty
     font-size: 14px;
     background-color: #f9f9f9; /* Subtle background for inputs */
     margin-top: 4px;
-}
-
-td input[type="text"]:focus, td input[type="date"]:focus, td input[type="time"]:focus {
+  }
+  
+  td input[type="text"]:focus, td input[type="date"]:focus, td input[type="time"]:focus {
     outline: none;
     border-color: #2980b9; /* Blue focus border */
-}
-
-.dropdown-cell {
+  }
+  
+  .dropdown-cell {
     text-align: center;
-}
-button {
+  }
+  button {
     background-color: #2980b9;
     color: white;
     border: none;
@@ -147,51 +147,39 @@ button {
     cursor: pointer;
     margin: 10px 5px;
     transition: background-color 0.3s;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: #1f6692; /* Darker blue on hover */
-}
-
-.git {
+  }
+  
+  .git {
     text-align: center;
-}
-
-.total-duration, #total-score, #grand-total {
+  }
+  
+  .total-duration, #total-score, #grand-total {
     font-weight: bold;
     text-align: center;
-}
-
-#grand-total {
+  }
+  
+  #grand-total {
     background-color: #2980b9;
     color: white;
-}
-
-/* Style the logo container */
-.logo-container {
+  }
+  
+  /* Style the logo container */
+  .logo-container {
     text-align: left;
     margin-bottom: 20px; /* Optional: Adds space below the logo */
-}
-
-/* Style the logo itself */
-.company-logo {
+  }
+  
+  /* Style the logo itself */
+  .company-logo {
     max-width: 150px; /* Optional: Adjust the size of the logo */
     height: auto;       
-}
-
-/* Default Styles (for large screens) */
-.container {
-    width: 95%;
-    max-width: 1400px; /* Ensures it doesn’t get too wide */
-    padding: 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px;
-}
-/* Default Styles (for large screens) */
+  }
+  
+  /* Default Styles (for large screens) */
 .container {
     width: 95%;
     max-width: 1400px; /* Ensures it doesn’t get too wide */
