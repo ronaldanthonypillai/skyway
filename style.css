@@ -211,12 +211,12 @@ button:hover {
   }
 
   th, td {
-      font-size: 13px;
+      font-size: 14px;
       padding: 6px 8px;
   }
 
   td input[type="text"], td input[type="date"], td input[type="time"] {
-      font-size: 13px;
+      font-size: 14px;
       padding: 5px;
   }
 
@@ -248,16 +248,16 @@ button:hover {
   }
 
   table {
-      font-size: 13px;
+      font-size: 14px;
   }
 
   th, td {
       padding: 5px;
-      font-size: 13px;
+      font-size: 14px;
   }
 
   td input[type="text"], td input[type="date"], td input[type="time"] {
-      font-size: 13px;
+      font-size: 14px;
       padding: 4px;
   }
 
