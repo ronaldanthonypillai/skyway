@@ -6,19 +6,19 @@
     <title>Lesson 1 Evaluation</title>
     <link rel = "stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <div class="container">
+<div class="container">
     <div class="logo-container">
         <img src="company_logo.png" alt="Company Logo" class="company-logo">
     </div>
     <h2>Lesson 1 Evaluation</h2>
     <h2>Instructor Name, Sign & SA#: <input type="text"></h2>
     <div>
-    <h3>Date: <input type="date"></h3>
+    <h2>Date: <input type="date"></h2>
     </div>
-    <table>
+    <div class="scoreTable-container">
+    <table class="scoreTable">
         <thead>
             <tr>
                 <th>S.NO</th>
@@ -50,7 +50,7 @@
                 <td>4</td>
                 <td>Inspection Interior</td>
                 <td class="dropdown-cell"></td>
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>5</td>
@@ -92,7 +92,7 @@
                 <td>11</td>
                 <td>Mirror Adj.</td>
                 <td class="dropdown-cell"></td>
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>12</td>
@@ -104,58 +104,65 @@
                 <td>13</td>
                 <td>Air Brake Tests</td>
                 <td class="dropdown-cell"></td>
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>14</td>
                 <td>Seat Belt Use</td>
                 <td class="dropdown-cell"></td>
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>15</td>
                 <td>Push Pull Steering</td>
                 <td class="dropdown-cell"></td>
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>16</td>
                 <td>Smoothness of Operation</td>
                 <td class="dropdown-cell"></td>
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>17</td>
                 <td><input type="text"></td>
                 <td class="dropdown-cell"></td>
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>18</td>
                 <td><input type="text"></td>
                 <td class="dropdown-cell"></td>
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>19</td>
                 <td>Attitude</td>
                 <td class="dropdown-cell"></td>
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>20</td>
                 <td>Defensive Driving</td>
                 <td class="dropdown-cell"></td> 
-                <td><input type="text" style="width: 450px;"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>21</td>
-                <td>Total Score /100</td>
+                <td>Total Score /<span id="out-off">0</span></td>
                 <td id="total-score">0</td>
-                <td>Participant Name: <input type="text" style="width: 350px;"></td>
+                <td>Participant Name:   <input type="text"></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Percentage</td>
+                <td id="percentage">0</td>
+                <td>Participant Signature: <input type="text"></td>
             </tr>
         </tbody>
     </table>
+    </div>
 
     <h3>Comments:</h3>
     <ul>
@@ -167,7 +174,10 @@
         <li>5. able to perform task without guidance.</li>
         <li>/  did not perform task.</li>
     </ul>
-    <table  >
+
+    <h3>Feedback:</h3>  
+    <textarea id="additional-comments" rows="6" cols="100" maxlength="150" placeholder="Enter your comments here (max 150 words)..."></textarea>
+    <table id="timeTable">
         <thead>
             <tr>
                 <th>Interior Items</th>
@@ -250,14 +260,13 @@
         </tbody>
     </table>
     <br/>   
-    <div><button type="button" onclick="window.print()">Print this page</button>
+    <div>
+    <button type="button" onclick="window.print()">Print this page</button>
+    <button type="button" onclick="resetFields()">Reset</button>
     <button type="button" onclick="window.location.href='index.html'">Back to Home</button>
     </div>
     <!-- Email Input -->
     <h5>Email: <input type="email" id="email" placeholder="Enter your email"></h5>
-        
-    <!-- Buttons -->
-    <button type="button" onclick="generateAndSendPDF()">Send as PDF</button>
 </div>
 </body>
 </html>
